@@ -1,5 +1,23 @@
 {{#if @root.config.schemaNamespace ~}}export namespace {{@root.config.schemaNamespace}} { {{/if}}
+
+// ENUMS
+{{#each enums}}
+{{>enum }}
+{{/each}}
+
+// DbObjects
 {{#each types}}
 {{>type }}
 {{/each}}
+
+// Unions
+{{#each unions}}
+{{>union }}
+{{/each}}
+
+// Scalars
+{{#each scalars}}
+{{>scalar }}
+{{/each}}
+
 {{#if @root.config.schemaNamespace ~}} } {{~/if}}
