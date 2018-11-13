@@ -1,19 +1,25 @@
 {{#if @root.config.schemaNamespace ~}}export namespace {{@root.config.schemaNamespace}} { {{/if}}
+// INTERFACES
 {{#each interfaces}}
 {{>interface }}
 {{/each}}
+// ENUMS
 {{#each enums}}
 {{>enum }}
 {{/each}}
+// INPUTTYPES
 {{#each inputTypes}}
 {{>inputType }}
 {{/each}}
+// TYPES
 {{#each types}}
 {{>type }}
 {{/each}}
+// UNIONS
 {{#each unions}}
 {{>union }}
 {{/each}}
+// SCALARS
 {{#each scalars}}
 {{>scalar }}
 {{/each}}
