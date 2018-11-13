@@ -4,7 +4,6 @@ import { GraphQLSchema } from 'graphql';
 import * as Handlebars from 'handlebars';
 import * as enumTemplate from './templates/enum.handlebars';
 import * as index from './templates/index.handlebars';
-import * as inputType from './templates/inputType.handlebars';
 import * as interfaceTemplate from './templates/interface.handlebars';
 import * as scalar from './templates/scalar.handlebars';
 import * as type from './templates/type.handlebars';
