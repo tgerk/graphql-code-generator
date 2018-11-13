@@ -1,13 +1,3 @@
-{{#each fields}}
-{{~# if hasArguments }}
-export interface {{ toPascalCase name }}{{ toPascalCase ../name }}Args {
-{{#each arguments}}
-  {{ name }}: {{ toPrimitive type }}{{#isArray this }}[]{{/isArray}}{{#unless isRequired}} | null{{/unless}}; {{ toComment description }}
-{{/each}}
-}
-
-{{/if}}
-{{/each}}
 {{#ifNotRootType this }}
 {{#ifDirective this "entity" }}
 
