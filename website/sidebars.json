@@ -1,5 +1,6 @@
 {
   "docs": {
+    "Migration": ["migration/from-0-13"],
     "Getting Started": [
       "getting-started/index",
       "getting-started/codegen-config",
@@ -26,7 +27,6 @@
       "custom-codegen/validate-configuration",
       "custom-codegen/extend-schema",
       "custom-codegen/using-handlebars"
-    ],
-    "Migration": ["migration/from-0-13"]
+    ]
   }
 }
