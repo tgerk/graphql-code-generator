@@ -1,4 +1,5 @@
 import { Field } from 'graphql-codegen-core';
+import * as Handlebars from 'handlebars';
 
 export const isPrimitive = map =>
   function(this: any, field: Field | keyof typeof map, options: Handlebars.HelperOptions) {

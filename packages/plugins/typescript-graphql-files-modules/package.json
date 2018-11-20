@@ -9,12 +9,16 @@
     "build": "codegen-templates-scripts build",
     "pretest": "yarn build"
   },
-  "devDependencies": {
-    "codegen-templates-scripts": "0.14.1",
-    "graphql": "14.0.2",
+  "dependencies": {
     "graphql-codegen-core": "0.14.1",
-    "graphql-codegen-plugin-handlebars-helpers": "0.14.1",
-    "graphql-codegen-plugin-helpers": "0.14.1"
+    "graphql-codegen-plugin-helpers": "0.14.1",
+    "handlebars": "^4.0.12"
+  },
+  "peerDependencies": {
+    "graphql": "14.0.2"
+  },
+  "devDependencies": {
+    "codegen-templates-scripts": "0.14.1"
   },
   "main": "./dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,7 +28,7 @@
   "jest": {
     "globals": {
       "ts-jest": {
-        "enableTsDiagnostics": false
+        "diagnostics": false
       }
     },
     "transform": {

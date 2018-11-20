@@ -113,7 +113,7 @@ describe('executeWithOptions', () => {
       })
     );
 
-    expect(result[0].content).toMatch('Generated in');
+    expect(result[0].content).toMatch('// Generated at');
   });
 
   it('execute the correct results when using schema export as object', async () => {

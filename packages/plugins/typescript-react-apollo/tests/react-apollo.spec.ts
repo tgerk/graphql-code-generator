@@ -1,4 +1,4 @@
-import 'graphql-codegen-core/dist/testing';
+import '../../../graphql-codegen-core/tests/helper';
 import { gql, introspectionToGraphQLSchema, schemaToTemplateContext, transformDocument } from 'graphql-codegen-core';
 import { makeExecutableSchema } from 'graphql-tools';
 import { plugin } from '../dist';

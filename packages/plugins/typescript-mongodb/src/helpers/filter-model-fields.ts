@@ -1,4 +1,5 @@
 import { AstNode } from 'graphql-codegen-core';
+import * as Handlebars from 'handlebars';
 
 function filterModelFields(fieldsArray: AstNode[], options: Handlebars.HelperOptions) {
   let result = '';

@@ -1,4 +1,5 @@
 import { Field, Type } from 'graphql-codegen-core';
+import * as Handlebars from 'handlebars';
 
 export interface ParentsMap {
   [key: string]: string;

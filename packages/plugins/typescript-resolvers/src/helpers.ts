@@ -3,6 +3,7 @@ import { Field, Type } from 'graphql-codegen-core';
 import { GraphQLSchema } from 'graphql';
 import { convertedType, getFieldType as fieldType } from 'graphql-codegen-typescript-common';
 import { pickMapper, useDefaultMapper } from './mappers';
+import * as Handlebars from 'handlebars';
 
 export const getFieldType = convert => (field: Field, options: Handlebars.HelperOptions) => {
   const config = options.data.root.config || {};

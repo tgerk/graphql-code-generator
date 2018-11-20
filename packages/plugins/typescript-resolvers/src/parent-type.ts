@@ -1,6 +1,7 @@
 import { Type } from 'graphql-codegen-core';
 import { GraphQLSchema, GraphQLObjectType } from 'graphql';
 import { pickMapper, useDefaultMapper } from './mappers';
+import * as Handlebars from 'handlebars';
 
 function getRootTypeNames(schema: GraphQLSchema): string[] {
   const query = ((schema.getQueryType() || {}) as GraphQLObjectType).name;

@@ -10,7 +10,7 @@ export const plugin: PluginFunction<TimePluginConfig> = async (
   config: TimePluginConfig
 ): Promise<string> => {
   let format;
-  let message = 'Generated in ';
+  let message = 'Generated at ';
 
   if (config && typeof config === 'string') {
     format = config;

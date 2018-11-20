@@ -1,4 +1,5 @@
 import { Field } from 'graphql-codegen-core';
+import * as Handlebars from 'handlebars';
 
 export function shouldHavePrefix(type: Field, options: Handlebars.HelperOptions) {
   const config = options.data.root.config || {};

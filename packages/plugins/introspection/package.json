@@ -10,13 +10,14 @@
     "build": "codegen-templates-scripts build",
     "pretest": "yarn build"
   },
+  "dependencies": {
+    "graphql-codegen-core": "^0.14.1"
+  },
   "peerDependencies": {
     "graphql": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0"
   },
   "devDependencies": {
-    "codegen-templates-scripts": "0.14.1",
-    "graphql": "14.0.2",
-    "graphql-codegen-core": "0.14.1"
+    "codegen-templates-scripts": "0.14.1"
   },
   "main": "./dist/index.js",
   "typings": "dist/index.d.ts",
@@ -26,7 +27,7 @@
   "jest": {
     "globals": {
       "ts-jest": {
-        "enableTsDiagnostics": false
+        "diagnostics": false
       }
     },
     "transform": {

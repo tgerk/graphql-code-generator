@@ -1,7 +1,7 @@
 import { DepGraph } from 'dependency-graph';
 import gqlTag from 'graphql-tag';
-import { Operation } from 'graphql-codegen-core';
-import { Fragment } from 'graphql-codegen-core';
+import { Operation, Fragment } from 'graphql-codegen-core';
+import * as Handlebars from 'handlebars';
 
 export const propsType = convert => ({ name, operationType }: any, options: Handlebars.HelperOptions) => {
   const { noNamespaces } = options.data.root.config || { noNamespaces: false };

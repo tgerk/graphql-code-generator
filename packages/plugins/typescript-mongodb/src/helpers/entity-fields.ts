@@ -1,6 +1,7 @@
 import { Field, Interface, Type } from 'graphql-codegen-core';
 import { set } from 'lodash';
 import { convertedType } from 'graphql-codegen-typescript-common';
+import * as Handlebars from 'handlebars';
 
 // Directives fields
 const ID_DIRECTIVE = 'id';

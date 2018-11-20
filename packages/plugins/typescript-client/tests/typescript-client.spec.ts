@@ -1,4 +1,4 @@
-import 'graphql-codegen-core/dist/testing';
+import '../../../graphql-codegen-core/tests/helper';
 import { introspectionToGraphQLSchema, makeExecutableSchema } from 'graphql-codegen-core';
 import { readFileSync } from 'fs';
 import { plugin } from '../dist';

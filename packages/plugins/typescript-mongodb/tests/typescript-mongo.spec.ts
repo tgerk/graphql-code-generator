@@ -1,4 +1,4 @@
-import 'graphql-codegen-core/dist/testing';
+import '../../../graphql-codegen-core/tests/helper';
 import {
   GraphQLSchema,
   makeExecutableSchema,

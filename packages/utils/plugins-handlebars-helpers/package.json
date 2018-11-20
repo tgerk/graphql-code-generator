@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "@types/common-tags": "1.4.0",
-    "@types/handlebars": "4.0.39"
+    "@types/handlebars": "4.0.39",
+    "codegen-templates-scripts": "0.14.1"
   },
   "main": "./dist/index.js",
   "typings": "dist/index.d.ts",

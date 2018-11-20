@@ -1,4 +1,5 @@
 import { parseMapper } from './mappers';
+import * as Handlebars from 'handlebars';
 
 export function importContext(options: Handlebars.HelperOptions): string {
   const config = options.data.root.config || {};

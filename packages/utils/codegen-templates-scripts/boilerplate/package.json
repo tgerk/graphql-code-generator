@@ -9,7 +9,9 @@
     "pretest": "yarn build",
     "test": "codegen-templates-scripts test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "codegen-templates-scripts": "0.14.1"
+  },
   "main": "./dist/index.js",
   "typings": "dist/index.d.ts",
   "typescript": {
@@ -18,7 +20,7 @@
   "jest": {
     "globals": {
       "ts-jest": {
-        "enableTsDiagnostics": false
+        "diagnostics": false
       }
     },
     "transform": {

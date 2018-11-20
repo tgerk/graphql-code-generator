@@ -1,5 +1,6 @@
 import { Type } from 'graphql-codegen-core';
 import { pickMapper, parseMapper } from './mappers';
+import * as Handlebars from 'handlebars';
 
 interface Modules {
   [path: string]: string[];
